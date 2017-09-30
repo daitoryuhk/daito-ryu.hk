@@ -1,0 +1,61 @@
+<div class="masthead">
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+            <li id="zh"><a href="#" onclick="changeLanguage('/zh/')">中文</a></li>
+            <li id="en"><a href="#" onclick="changeLanguage('/en/')">English</a></li>
+        </ul>
+        <img src="../image/Daito-ryu-header.png" class="img-responsive" alt="Responsive image" />
+    </div>
+    <div class="pad"></div>       
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Welcome</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <!--<li id="history" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">History <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Prior to the 19th century</a></li>
+                            <li><a href="#">Takeda Sokaku</a></li>
+                            <li><a href="#">Takeda Tokimune</a></li>
+                            /*<li class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+*/                            <li><a href="#">Kondo Katsuyuki</a></li>
+                            <li><a href="#">Daito-ryu and aikido</a></li>
+                        </ul>
+                    </li>-->
+                    <li id="about" ><a href="about.html">About</a></li>
+                    <li id="trainingSchedule" ><a href="trainingSchedule.html">Training schedule</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+<script>
+	var loc = window.location.href;
+	var dirArray = loc.split('/');
+	var dir = dirArray[dirArray.length-2];
+	$('#'+dir).addClass("active");
+	
+	var page = dirArray[dirArray.length-1];
+	if (page!='')
+	{
+		page = page.replace(".html", "");
+		$('#'+page).addClass("active");
+	}
+
+	//set a global var
+    function changeLanguage(to){
+        var from = document.location.href;
+        var url = from.replace('/' + dir + '/', to);
+        document.location = url;
+    }
+</script>

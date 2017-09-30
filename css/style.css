@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-size: 14px;
+	font-family: 細明體, Verdana, Arial, Helvetica, sans-serif;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: justify; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+}
+
+a{
+	color: #666666;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover{
+	color: red;
+} 
+
+#header{
+	padding: 0;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	overflow: hidden; /* add this to contain floated children */
+}
+
+#headerImage{
+	float:left;
+}
+
+#changeLanguage{
+	width: 150px;
+	float: right;
+}
+
+#changeLanguage p{
+	color: #666666;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+#menu{
+	background: #DDDDDD; 
+}
+
+#headerContainer {
+	width: 1000px;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+}
+
+#pageContainer {
+	width: 1000px;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+}
+
+#mainContent {
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	text-align: justify;
+}
+
+#cover{
+	background-image: url(../image/Daito-ryu-cover.png);
+	background-position: center top;
+ 	background-repeat:no-repeat;
+}
+
+#cover #footer { 
+	padding: 550px 0px 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	overflow: hidden; /* add this to contain floated children */
+} 
+
+#cover #zh{ 
+	width: 500px;
+	float:left;
+	text-align: center;
+} 
+
+#cover #en{ 
+	width: 500px;
+	float: left;
+	text-align: center;
+} 
+
+#cover a{ 
+	font-size: 24px;
+} 

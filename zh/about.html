@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta NAME="keywords" content="daito-ryu aiki-jujutsu,daito-ryu,aiki,jujutsu,aikijujutsu,大東流合氣柔術,大東流,合氣,柔術,合氣柔術">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/justified-nav.css" rel="stylesheet">
+	
+ 	<!-- CSS for photo gallery -->
+    <link href="../css/ekko-lightbox.min.css" rel="stylesheet">
+    
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<div class="container">
+
+	<!-- Site title -->
+	<div id="title"></div>
+    
+	<!-- Site header -->
+	<div id="header"></div>
+    
+      <!-- Example row of columns -->
+      <div class="row">
+      	<div class="col-md-12">
+        	<h2>關於</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-8">
+			<p>本會(香港大東流合氣柔術協會)是得到近藤勝之先生(大東流合氣柔術本部長)認可之屬會。</p>
+            <p>請參閱大東流合氣柔術本部<a href="http://www.daito-ryu.org/en/locations.html#asia" target="_blank">網頁</a>.</p>
+            <p>Dermot Creagh 先生從近藤勝之先生處取得大東流合氣柔術三段資格及支部長執照。</p>
+            <p>歡迎18歲或以上人士參加，男女均可。</p>
+          <p>費用: 
+                <ul>
+                    <li>入會費: $100(只在入會收取一次)</li>
+                    <li>月費: $500</li>
+                    <li>道衣: 白色及整潔柔道衣</li>
+                </ul>
+            </p>
+        </div>
+        <div class="col-xs-6 col-md-4">
+        	<p><a href="../image/Dermot_Creagh_with_Kondo_Katsuyuki_Sensei.JPG" data-toggle="lightbox"><img src="../image/Dermot_Creagh_with_Kondo_Katsuyuki_Sensei_thumbnail.JPG" class="img-thumbnail" alt="Responsive image" title="Dermot Creagh with Kondo Katsuyuki Sensei" /></a></p>
+        </div>
+        <div class="col-xs-6 col-md-4">
+        	<p><a href="../image/kuruma_daoshi.JPG" data-toggle="lightbox"><img src="../image/kuruma_daoshi_thumbnail.JPG" class="img-thumbnail" alt="Responsive image" title="kuruma daoshi" /></a></p>
+        </div>
+      </div>
+
+      <!-- Site footer -->
+      <div id=footer></div>
+
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+   	<script src="../js/ekko-lightbox.min.js"></script>
+    <script type="text/jscript">
+		$(document).ready(function() {
+			$('#title').load('../title.html');
+		});
+		$(document).ready(function() {
+			$('#header').load('header.html');
+		});
+		$(document).ready(function() {
+			$('#footer').load('footer.html');
+		});
+		$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+			event.preventDefault();
+			$(this).ekkoLightbox();
+		}); 
+    </script>
+    <script src="../js/googleanalytics.js"></script>
+  </body>
+</html>
